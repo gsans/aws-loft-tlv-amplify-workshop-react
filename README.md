@@ -904,27 +904,27 @@ This would create a folder called `javascript` in our S3 bucket & store a file c
 If we want to read everything from this folder, we can use `Storage.list`:
 
 ```js
-readFromStorage() {
-  const data = Storage.list('javascript/')
-  console.log('data from S3: ', data)
+async function readFolderFromStorage(folder) {
+  const data = await Storage.list(folder) // 'javascript'
+  console.log('Folder: ', data)
 }
 ```
 
 If we only want to read the single file, we can use `Storage.get`:
 
 ```js
-readFromStorage() {
-  const data = Storage.get('javascript/MyReactComponent.js')
-  console.log('data from S3: ', data)
+async function readFileFromStorage(file) {
+  const data = await Storage.get(file) // 'javascript/MyReactComponent.js'
+  console.log('File: ', data)
 }
 ```
 
 If we wanted to pull down everything, we can use `Storage.list`:
 
 ```js
-function readFromStorage() {
-  const data = Storage.list('')
-  console.log('data from S3: ', data)
+async function readRootFromStorage() {
+  const data = await Storage.list('')
+  console.log('Root: ', data)
 }
 ```
 
