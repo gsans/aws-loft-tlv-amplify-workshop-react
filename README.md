@@ -96,7 +96,7 @@ amplify init
 - Do you want to use an AWS profile? __Y__
 - Please choose the profile you want to use: __amplify-workshop-user__
 
-Now, the AWS Amplify CLI has iniatilized a new project & you will see a new folder: __amplify__ & a new file called `aws-exports.js` in the __src__ directory. These files hold your project configuration.
+Now, the AWS Amplify CLI has initialized a new project & you will see a new folder: __amplify__ & a new file called `aws-exports.js` in the __src__ directory. These files hold your project configuration.
 
 ## Adding Authentication
 
@@ -121,7 +121,7 @@ To view the service you can run the `console` command the feature you'd like to 
 amplify console auth
 ```
 
-### Configuring the React applicaion
+### Configuring the React application
 
 Now, our resources are created & we can start using them!
 
@@ -241,7 +241,7 @@ function onChange(e) {
 />
 ```
 
-We'd also need to have a method that signed up & signed in users. We can us the Auth class to do thi. The Auth class has over 30 methods including things like `signUp`, `signIn`, `confirmSignUp`, `confirmSignIn`, & `forgotPassword`. Thes functions return a promise so they need to be handled asynchronously.
+We'd also need to have a method that signed up & signed in users. We can us the Auth class to do this. The Auth class has over 30 methods including things like `signUp`, `signIn`, `confirmSignUp`, `confirmSignIn`, & `forgotPassword`. These functions return a promise so they need to be handled asynchronously.
 
 ```js
 // import the Auth component
