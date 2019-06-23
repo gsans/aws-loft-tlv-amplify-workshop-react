@@ -882,7 +882,7 @@ For example, if we wanted to test it out we could store some text in a file like
 import { Storage } from 'aws-amplify'
 
 // create function to work with Storage
-function addToStorage() {
+async function addToStorage() {
   await Storage.put('javascript/MyReactComponent.js', `
     import React from 'react'
     const App = () => (
