@@ -996,8 +996,7 @@ amplify add analytics
 > Next, we'll be prompted for the following:
 
 - Provide your pinpoint resource name: __amplifyanalytics__   
-- Apps need authorization to send analytics events. Do you want to allow guest/unauthenticated users to send analytics events (recommended when getting started)? __Y__   
-- overwrite YOURFILEPATH-cloudformation-template.yml __Y__
+- Apps need authorization to send analytics events. Do you want to allow guest/unauthenticated users to send analytics events (recommended when getting started)? __Y__ 
 
 ### Recording events
 
